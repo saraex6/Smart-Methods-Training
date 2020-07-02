@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<meta name="viewport"
+	ontent="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+
+	<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" /> 
+
+	<title>Aligning Buttons</title> 
+
+	<style type="text/css"> 
+		html, 
+		body { 
+			height: 300px; 
+		} 
+		
+	
+		
+		.top-center { 
+			top: 0; 
+			left: 50%; 
+			transform: translateX(-50%); 
+		} 
+		
+		
+		.mid-left { 
+			top: 50%; 
+			left: 0; 
+			transform: translateY(-50%); 
+		} 
+		
+.mid-center { 
+			top: 50%; 
+			left: 50%; 
+			transform: translateX(-50%) translateY(-50%); 
+		} 
+		
+		.mid-right { 
+			top: 50%; 
+			right: 0; 
+			transform: translateY(-50%); 
+		} 
+		
+		
+		.bottom-center { 
+			bottom: 0; 
+			left: 50%; 
+			transform: translateX(-50%); 
+		} 
+		
+		
+	</style> 
+</head> 
+
+<body> 
+	
+	<div class="container h-100"> 
+		<div class="position-relative h-100"> 
+			
+			<div class="position-absolute top-center"> 
+				<button type="button" class="btn btn-primary">Forward</button> 
+			</div> 
+		
+
+			<div class="position-absolute mid-left"> 
+				<button type="button" class="btn btn-primary">Left</button> 
+			</div> 
+			
+			<div class="position-absolute mid-center"> 
+				<button type="button" class="btn btn-primary">Stop</button> 
+			</div> 
+			
+			<div class="position-absolute mid-right"> 
+				<button type="button" class="btn btn-primary">Right</button> 
+			</div> 
+
+			
+			<div class="position-absolute bottom-center"> 
+				<button type="button" class="btn btn-primary">Backward</button> 
+			</div> 
+			
+		</div> 
+	</div> 
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> 
+	<script src= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"> 
+	</script> 
+</body> 
+
+</html>					 
