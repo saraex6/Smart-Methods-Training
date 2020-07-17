@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+	
+<head> 
+	<meta charset="utf-8">
+	<title> </title> 
+</head> 
+
+
+</head> 
+
+<body style="text-align:center; ">
+	
+	<form class="" action="noDB.php" method="post" > 
+
+<div>
+		<button type="submit" name="Forward">Forward</button>  
+		<br>
+</div>
+		
+
+<div>
+	<button type="submit" name="Left">Left</button> 
+	<button type="submit" name="Stop">Stop</button> 
+	<button type="submit" name="Right">Right</button> 
+			
+</div>
+
+		
+<div>
+	<button type="submit" name="Backward">Backward</button> 
+		 
+		<br>
+</div>	
+						
+	</form> 
+</body>
+
+</html> 
