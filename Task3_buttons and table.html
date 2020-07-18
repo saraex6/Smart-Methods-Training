@@ -1,0 +1,61 @@
+<?php 
+include_once('tryTable.php');
+$query="SELECT * FROM table3";
+$result=mysql_query($query);
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="text-align: center;">
+
+
+<form action="Task3.php" method="post" target="_blank" >
+
+<br><br>
+  Right : <br> <input type="text" name="ri"><br><br>
+  
+  Forward : <br> <input type="text" name="forward"><br><br>
+
+  Left : <br> <input type="text" name="le"><br><br>
+
+<input type="submit" value="Save">
+  <!-- <input type="submit" value="Save"> <br> -->
+
+
+<button type="submit" name="Delete">Delete</button> 
+
+<button type="submit" name="Start">Start</button> 
+
+
+<br><br>
+
+</form>
+
+	<table align="center" border="1px" style="width: 500px; line-height: 40px;">
+		<tr>
+			<th colspan="4"><h2>Directions Map</h2></th>
+			<tr>
+				<t> 
+					<th>Left</th>
+					<th>Right</th>
+					<th>Forward</th>
+				</t>
+			
+			<?php 
+        while($rows=mysql_fetch_assoc($result))
+        {
+    		?>        
+            <tr>
+                <td><?php echo $rows['le']; ?></td>
+                <td><?php echo $rows['ri']; ?></td>
+                <td><?php echo $rows['forward']; ?></td>
+            </tr>
+    		<?php     
+        }
+    		?> 
+	</table>
+</body>
+</html>
